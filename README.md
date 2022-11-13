@@ -43,5 +43,19 @@ python train.py --name ScanNet  --SCANNET_ROOT
 python test.py --checkpoint --SCANNET_ROOT
 ```
 
+### Pretrained Model
+We provide the pre-trained model of PointMBF in [BaiDuyun](https://pan.baidu.com/s/1LO94qfYwEiqwj2hUg8Eojw?_at_=1668346563693), Password: pmbf.
+
+
+### Acknowledgments
+In this project we use (parts of) the official implementations of the followin works: 
+
+- [URR](https://github.com/mbanani/unsupervisedRR) (Trainer and dataset)
+- [D3Feat](https://github.com/XuyangBai/D3Feat) (Geometric network)
+- [ScanNet](https://github.com/ScanNet/ScanNet) (Make dataset)
+- [3DMatch](https://github.com/andyzeng/3dmatch-toolbox) (Make dataset)
+
+ We thank the respective authors for open sourcing their methods. 
+
 
 

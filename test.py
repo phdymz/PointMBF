@@ -134,7 +134,7 @@ KPFCN.add_argument('--modulated', type=bool, default=False)
 
 
 FUSION = add_argument_group('')
-FUSION.add_argument('--num_i2p', type=int, default=16)
+FUSION.add_argument('--num_i2p', type=int, default=32)
 FUSION.add_argument('--num_p2i', type=int, default=1)
 
 
@@ -347,8 +347,6 @@ if __name__ == "__main__":
     args.batch_size = 4
 
     assert args.num_layers == args.num_downsample
-    if args.name == 'ScanNet':
-        args.voxelize = True
 
 
     # Define model
@@ -391,6 +389,7 @@ if __name__ == "__main__":
 
     if model_cfg.name == 'ScanNet':
         nei = np.array([30, 30, 35])
+        args.voxelize = True
     else:
         nei = np.array([37, 18, 22])
 
