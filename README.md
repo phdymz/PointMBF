@@ -20,11 +20,23 @@ pip install -r requirements.txt
 ```
 
 ### Make dataset 
+You need to download the RGB-D version of 3DMatch dataset and ScanNet dataset in advance.
+Details can refer to [URR](https://github.com/mbanani/unsupervisedRR/blob/main/docs/datasets.md).
+
 #### 3DMatch
-You need download the 3DMatch dataset in advance. 
+```shell
+python create_3dmatch_rgbd_dict.py --data_root 3dmatch_train.pkl train
+python create_3dmatch_rgbd_dict.py --data_root 3dmatch_valid.pkl valid
+python create_3dmatch_rgbd_dict.py --data_root  3dmatch_test.pkl test
+```
+
 
 #### ScanNet
-You need download the ScanNet dataset in advance. 
+```shell
+python create_scannet_dict.py --data_root scannet_train.pkl train
+python create_scannet_dict.py --data_root scannet_valid.pkl valid
+python create_scannet_dict.py --data_root scannet_test.pkl test 
+```
 
 
 ### Train on 3DMatch
