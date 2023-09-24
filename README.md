@@ -2,7 +2,7 @@
 
 This repository represents the official implementation of the paper:
 
-[Paper]()
+[PointMBF: A Multi-scale Bidirectional Fusion Network for Unsupervised RGB-D Point Cloud Registration](https://arxiv.org/pdf/2308.04782.pdf)
 
 ### Instructions
 This code has been tested on 
@@ -68,6 +68,18 @@ In this project we use (parts of) the official implementations of the followin w
 - [3DMatch](https://github.com/andyzeng/3dmatch-toolbox) (Make dataset)
 
  We thank the respective authors for open sourcing their methods. 
+
+### Citation
+If you find this code useful for your work or use it in your project, please consider citing:
+
+```shell
+@article{yuan2023pointmbf,
+  title={PointMBF: A Multi-scale Bidirectional Fusion Network for Unsupervised RGB-D Point Cloud Registration},
+  author={Yuan, Mingzhi and Fu, Kexue and Li, Zhihao and Meng, Yucong and Wang, Manning},
+  journal={arXiv preprint arXiv:2308.04782},
+  year={2023}
+}
+```
 
 
 
